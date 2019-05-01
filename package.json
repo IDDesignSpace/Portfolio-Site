@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "sass-webpack-plugin": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +31,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDDesignSpace/Portfolio-Site.git"
+  },
+  "author": "iddesignspace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDDesignSpace/Portfolio-Site/issues"
+  },
+  "homepage": "https://github.com/IDDesignSpace/Portfolio-Site#readme"
 }
