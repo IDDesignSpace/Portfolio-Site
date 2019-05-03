@@ -4,6 +4,7 @@ import Popper from 'popper.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/styles.scss';
+import turtle from "./img/turtle.jpg";
 
 const NavBar = function() {
     return (
@@ -26,7 +27,8 @@ class Main extends React.Component {
     }
     render() {
         return (
-            
+            <div className="container-fluid"> <img src={turtle} className="img-responsive"/></div>
+           
         );
 
     }
@@ -39,7 +41,8 @@ class MyPage extends React.Component {
     render() {
         return (
             <div>
-                <NavBar />        
+                <NavBar />  
+                <Main />      
             </div>
         );
     }
