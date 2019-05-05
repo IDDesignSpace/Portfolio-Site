@@ -32,6 +32,42 @@ class Main extends React.Component {
 
     }
 }
+ 
+class About extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return();
+    }
+}
+
+class Skils extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return ();
+    }
+}
+
+class Work extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return ();
+    }
+}
+
+class Contact extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return ();
+    }
+}
 
 class MyPage extends React.Component {
     constructor(props) {
