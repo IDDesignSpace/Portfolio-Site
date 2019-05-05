@@ -27,7 +27,10 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid main"><img src={logo} className="logo"/> </div>
+            <div className="container-fluid main">
+                <img src={logo} className="logo"/>
+                <h1>Welcome to idDesignSpace</h1>
+             </div>
            
         );
 

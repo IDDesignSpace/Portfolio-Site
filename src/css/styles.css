@@ -11,12 +11,18 @@ body {
   background-color: white;
   font-family: 'Raleway', sans-serif; }
 
+h1 {
+  padding: .8em;
+  background-color: rgba(228, 214, 167, 0.25);
+  margin: 3% 10% 4% 10%;
+  font-size: 5vh; }
+
 .main {
   height: 100vh;
   background-image: url("../img/main.jpg");
   text-align: center; }
 
-.logo {
+.main .logo {
   margin: 0 auto;
   height: 45vh;
-  margin-top: 20vh; }
+  margin-top: 10vh; }
