@@ -4,6 +4,7 @@ import Popper from 'popper.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/styles.scss';
+import logo from './img/id.png'
 
 const NavBar = function() {
     return (
@@ -26,19 +27,21 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid"> </div>
+            <div className="container-fluid main"><img src={logo} className="logo"/> </div>
            
         );
 
     }
 }
- 
+
 class About extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return();
+        return(
+            <div></div>
+        );
     }
 }
 
@@ -47,7 +50,9 @@ class Skils extends React.Component {
         super(props);
     }
     render() {
-        return ();
+        return (
+            <div></div>
+        );
     }
 }
 
@@ -56,7 +61,9 @@ class Work extends React.Component {
         super(props);
     }
     render() {
-        return ();
+        return (
+            <div></div>
+        );
     }
 }
 
@@ -65,7 +72,9 @@ class Contact extends React.Component {
         super(props);
     }
     render() {
-        return ();
+        return (
+            <div></div>
+        );
     }
 }
 

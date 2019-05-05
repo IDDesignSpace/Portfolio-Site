@@ -23,7 +23,21 @@ $color4: rgba(155, 41, 21, 1);
 $color5: rgba(185, 186, 163, 1);
 
 body {
-    background-color:$color2;
+    height: 100%;
+    margin: 0px;
+    background-color:white;
     font-family: 'Raleway', sans-serif;
+
 }
- 
+.main {
+    height:100vh;
+    background-image:url('../img/main.jpg');
+    text-align:center;
+}
+ .logo {
+     margin:0 auto;
+     height:45vh;
+     margin-top:20vh;
+     
+ }
+
