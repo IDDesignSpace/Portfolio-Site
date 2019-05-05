@@ -1,4 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About 
+
+The goal of this project is to create a singe page dynamic website for idDesignSpace to showcase their portfolio as a Front End Developer.
 
 ## Available Scripts
 
