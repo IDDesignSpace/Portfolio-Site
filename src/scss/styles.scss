@@ -43,6 +43,7 @@ h1 {
 .nav-bar {
     font-family: 'Roboto Condensed', sans-serif;
     background-color:$color2;
+    height:80px;
 }
 
 .nav h2 { 
@@ -52,12 +53,21 @@ h1 {
 }
 
 .logo-nav {
+    margin-top:5px;
     margin-left:20px;
     height:40px; 
 }
+.nav-links {
+    padding-top:20px;
+    padding-left:15px;
+}
 .nav-bar a {
+    margin-top: 20px;
     font-size:20px;
     color:$color1;
+    margin-left:15px;
+   
+    
 }
 
 

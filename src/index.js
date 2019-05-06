@@ -8,17 +8,22 @@ import logo from './img/id.png'
 
 const NavBar = function() {
     return (
-        <div className="row nav-bar"> 
-            <div className="col-md-6 nav">
-            <img src={logo}  className="logo-nav img-responsive"/>
-                <h2>idDesignSpace</h2>
+        <div class="container-fluid">
+            <div className="row nav-bar">
+                <div className="col-lg-9  col-md-6 nav">
+                    <img src={logo} className="logo-nav img-responsive" />
+                    <h2>idDesignSpace</h2>
+                </div>
+                <div className="col-lg-3 col-md-6 nav-links">
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Skills</a>
+                    <a>Work</a>
+                    <a>Contact</a>
+                </div>
             </div>
-            <div className="col-md-6">
-                <a>Home</a>
-                <a>About</a>
-                <a>Contact</a>
-            </div>            
         </div>
+       
     );
 };
 

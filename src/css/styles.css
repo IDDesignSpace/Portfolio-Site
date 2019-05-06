@@ -8,16 +8,42 @@
 body {
   height: 100%;
   margin: 0px;
-  background-color: white;
+  background-color: #9b2915;
   font-family: 'Raleway', sans-serif; }
 
 h1 {
   padding: .8em;
-  background-color: rgba(228, 214, 167, 0.25);
+  background-color: rgba(228, 214, 167, 0.8);
   margin: 3% 10% 4% 10%;
   font-size: 5vh; }
 
+.my-page {
+  padding: 0; }
+
+.nav-bar {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f2dd6e;
+  height: 80px; }
+
+.nav h2 {
+  font-size: 40px;
+  padding-left: 20px;
+  display: inline-block; }
+
+.logo-nav {
+  margin-top: 5px;
+  margin-left: 20px;
+  height: 40px; }
+
+.nav-bar a {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #01020c;
+  margin-left: 15px;
+  text-align: right; }
+
 .main {
+  margin: 0 auto;
   height: 100vh;
   background-image: url("../img/main.jpg");
   text-align: center; }
@@ -25,4 +51,6 @@ h1 {
 .main .logo {
   margin: 0 auto;
   height: 45vh;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 1; }
