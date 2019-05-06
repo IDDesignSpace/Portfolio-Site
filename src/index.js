@@ -8,11 +8,12 @@ import logo from './img/id.png'
 
 const NavBar = function() {
     return (
-        <div className=""> 
-            <div className="">
+        <div className="row nav-bar"> 
+            <div className="col-md-6 nav">
+            <img src={logo}  className="logo-nav img-responsive"/>
                 <h2>idDesignSpace</h2>
             </div>
-            <div className="">
+            <div className="col-md-6">
                 <a>Home</a>
                 <a>About</a>
                 <a>Contact</a>
@@ -27,7 +28,8 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid main">
+            <div className=" main">
+            
                 <img src={logo} className="logo"/>
                 <h1>Welcome to idDesignSpace</h1>
              </div>
@@ -87,7 +89,7 @@ class MyPage extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="my-page container-fluid">
                 <NavBar />  
                 <Main />      
             </div>
