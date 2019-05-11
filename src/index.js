@@ -50,18 +50,28 @@ class About extends React.Component {
     }
     render() {
         return(
-            <div></div>
+            <div>
+                <h2>About</h2>
+                <img src=""/>
+                <p></p>
+
+            </div>
         );
     }
 }
 
-class Skils extends React.Component {
+class Skills extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
         return (
-            <div></div>
+            <div>
+                <h2>Skills</h2>
+                <div className="graph">
+                
+                </div>
+            </div>
         );
     }
 }
@@ -72,7 +82,10 @@ class Work extends React.Component {
     }
     render() {
         return (
-            <div></div>
+            <div>
+                <h2>Work</h2>
+                <div className="work"></div>
+            </div>
         );
     }
 }
@@ -83,7 +96,22 @@ class Contact extends React.Component {
     }
     render() {
         return (
-            <div></div>
+            <div className="contact">
+                <h2>Contact</h2>
+            </div>
+        );
+    }
+}
+
+class Footer extend React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div>
+                
+            </div>
         );
     }
 }
@@ -95,8 +123,13 @@ class MyPage extends React.Component {
     render() {
         return (
             <div className="my-page container-fluid">
-                <NavBar />  
-                <Main />      
+                <NavBar /> 
+                <Main />
+                <About />
+                <Skills />
+                <Work />
+                <Contact />
+                <Footer />
             </div>
         );
     }

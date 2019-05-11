@@ -1,4 +1,4 @@
-/* This is the SASS file for idDesignSpace */
+/* === This is the SASS file for idDesignSpace === */
 
 /*
  * Colors for the project
@@ -7,6 +7,8 @@
 
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Raleway', sans-serif;
+
+/* === Global Settings === */
 
 /* HSL */
 $color1: hsla(235%, 85%, 3%, 1);
@@ -40,6 +42,9 @@ h1 {
     padding:0;
 }
 
+
+
+/* === Navbar Settings === */
 .nav-bar {
     font-family: 'Roboto Condensed', sans-serif;
     background-color:$color2;
@@ -70,6 +75,7 @@ h1 {
     
 }
 
+/* === Main Section === */
 
 .main {
     margin:0 auto;
@@ -85,3 +91,23 @@ h1 {
      opacity:1;
  }
 
+/* === About === */
+.about {
+
+}
+
+/* === Skills === */
+
+
+
+/* === Work === */
+
+
+
+
+/* === Contact === */
+
+
+
+
+/* ==== Foooter === */
