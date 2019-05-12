@@ -11,7 +11,6 @@ import logo from './img/id.png';
 const NavBar = function() {
     return (
         <div className="row nav-bar">
-        <div class="container-fluid">
                 <div className="col-lg-9  col-md-6 nav">
                     <img src={logo} alt="iddespignspace-logo" className="logo-nav img-responsive" />
                     <h2>idDesignSpace</h2>
@@ -23,7 +22,6 @@ const NavBar = function() {
                     <a>Work</a>
                     <a>Contact</a>
                 </div>
-            </div>
         </div>
        
     );
@@ -37,11 +35,10 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="main">
-            
+            <div className="main container-fluid">
                 <img src={logo} className="logo"/>
                 <h1>Welcome to idDesignSpace</h1>
-                <p>Hello,<br /> My name is Ian Barkan and this is idDesignSpace. This is a place to showcase my skills as a Front end web developer.</p>
+                <h2>Front End Developer and Designer</h2>
              </div>
            
         );
@@ -57,10 +54,10 @@ class About extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className = "about">
                 <h2>About</h2>
                 <img src=""/>
-                <p>I love to build and learn new things. I am a fan of good design and creative solutions to problems.I work as a teacher</p>
+                <p> My name is Ian Barkan, I am a 28 year software developer and designer. I have a knack for creative problem solving, making visually interesting User Interfaces and carefully crafting User Experiences. </p>
             </div>
         );
     }
@@ -122,8 +119,10 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <div>
-                
+            <div className="footer">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-codepen"></i>
             </div>
         );
     }
@@ -137,7 +136,7 @@ class MyPage extends React.Component {
     }
     render() {
         return (
-            <div className="my-page container-fluid">
+            <div className="my-page">
                 <NavBar /> 
                 <Main />
                 <About />

@@ -23,11 +23,12 @@ $color2: rgba(242, 221, 110, 1);
 $color3: rgba(228, 214, 167, .8);
 $color4: rgba(155, 41, 21, 1);
 $color5: rgba(185, 186, 163, 1);
+$whitebg: rgba(255,255,255,1);
 
 body {
     height: 100%;
-    margin: 0px;
-    background-color:$color4;
+    margin: 0;
+    background-color:$whitebg;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -40,8 +41,15 @@ h1 {
 }
 
 /* === Page Setting === */
+
+#root {
+    width:100%;
+}
+
 .my-page {
     padding:0;
+    margin:0 auto;
+    width:100%;
 }
 
 
@@ -49,13 +57,15 @@ h1 {
 /* === Navbar Settings === */
 .nav-bar {
     font-family: 'Roboto Condensed', sans-serif;
-    background-color:$color2;
+    background-color:$whitebg;
     height:80px;
+    width: 100%;;
+    margin:0;
 }
 
 .nav h2 { 
-     font-size:40px;
-     padding-left::20px;
+     font-size:2.8em;
+     padding-left:1.8em;
      display:inline-block;
 }
 
@@ -67,10 +77,11 @@ h1 {
 .nav-links {
     padding-top:20px;
     padding-left:15px;
+    padding-right:10px; 
 }
 .nav-bar a {
     margin-top: 20px;
-    font-size:20px;
+    font-size:1.5em;
     color:$color1;
     margin-left:15px;
    
@@ -84,6 +95,8 @@ h1 {
     height:100vh;
     background-image:url('../img/main.jpg');
     text-align:center;
+    margin:0;
+    width:100vw;
 }
  .main .logo {
      margin:0 auto;
@@ -95,21 +108,38 @@ h1 {
 
 /* === About === */
 .about {
-
+    background-color:$whitebg;
+    padding:10%;
 }
 
 /* === Skills === */
+.skills {
 
+}
 
 
 /* === Work === */
+.work {
 
+}
 
 
 
 /* === Contact === */
+.contact {
 
+}
 
 
 
 /* ==== Foooter === */
+
+.footer {
+    background-color: black;
+    height:150px;
+    text-align:center;
+}
+.footer i {
+    color:white; 
+    font-size:4em;
+}
