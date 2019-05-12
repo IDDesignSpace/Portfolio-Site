@@ -1,10 +1,5 @@
 /* === This is the SASS file for idDesignSpace === */
 
-/*
- * Colors for the project
- * Coolors Exported Palette - coolors.co/01020c-f2dd6e-e4d6a7-9b2915-b9baa3 
-*/ 
-
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Raleway', sans-serif;
 
@@ -56,6 +51,7 @@ h1 {
 
 /* === Navbar Settings === */
 .nav-bar {
+    position: fixed;
     font-family: 'Roboto Condensed', sans-serif;
     background-color:$whitebg;
     height:80px;
@@ -101,7 +97,7 @@ h1 {
  .main .logo {
      margin:0 auto;
      height:45vh;
-     margin-top:10vh;
+     margin-top:15vh;
      background-color:rgba(255,255,255,.75);
      opacity:1;
  }
@@ -110,6 +106,10 @@ h1 {
 .about {
     background-color:$whitebg;
     padding:10%;
+}
+.about img {
+    max-height:400px;
+
 }
 
 /* === Skills === */

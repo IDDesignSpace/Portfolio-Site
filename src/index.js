@@ -5,6 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/styles.scss';
 import logo from './img/id.png';
+import headShot from './img/head.jpg'
 
 {/* Navbar Component */ }
 
@@ -55,8 +56,11 @@ class About extends React.Component {
     render() {
         return (
             <div className = "about">
-                <h2>About</h2>
-                <img src=""/>
+                <div className = "row">
+                    <h2>About</h2>
+                </div>
+                
+                <img src={headShot} alt="" className="img-responsive"/>
                 <p> My name is Ian Barkan, I am a 28 year software developer and designer. I have a knack for creative problem solving, making visually interesting User Interfaces and carefully crafting User Experiences. </p>
             </div>
         );
