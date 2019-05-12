@@ -60,7 +60,7 @@ class About extends React.Component {
             <div>
                 <h2>About</h2>
                 <img src=""/>
-                <p>I love to build and learn new things. I am a fan of good design and creative solutions to problems. I also work as a teacher</p>
+                <p>I love to build and learn new things. I am a fan of good design and creative solutions to problems.I work as a teacher</p>
             </div>
         );
     }
