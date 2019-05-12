@@ -30,13 +30,14 @@ const NavBar = function() {
 };
 
 {/* Main Component */ }
+
 class Main extends React.Component {
     constructor(props) {
         super(props); 
     }
     render() {
         return (
-            <div className=" main">
+            <div className="main">
             
                 <img src={logo} className="logo"/>
                 <h1>Welcome to idDesignSpace</h1>
@@ -49,23 +50,24 @@ class Main extends React.Component {
 }
 
 {/* About Component */ }
+
 class About extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return(
+        return (
             <div>
                 <h2>About</h2>
                 <img src=""/>
-                <p>I love to build and learn new things. I love being challenged.  </p>
-
+                <p>I love to build and learn new things. I am a fan of good design and creative solutions to problems. I also work as a teacher</p>
             </div>
         );
     }
 }
 
 {/* Skills Component */ }
+
 class Skills extends React.Component {
     constructor(props) {
         super(props);
@@ -83,6 +85,7 @@ class Skills extends React.Component {
 }
 
 {/* Work Component */ }
+
 class Work extends React.Component {
     constructor(props) {
         super(props);
@@ -112,6 +115,7 @@ class Contact extends React.Component {
     }
 }
 
+{/* Footer Component */ }
 class Footer extends React.Component {
     constructor(props) {
         super(props);
@@ -124,6 +128,8 @@ class Footer extends React.Component {
         );
     }
 }
+
+{/* MyPage Component */ }
 
 class MyPage extends React.Component {
     constructor(props) {
