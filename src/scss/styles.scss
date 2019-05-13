@@ -57,9 +57,8 @@ div {
     width:100%;
 }
 
-
-
 /* === Navbar Settings === */
+
 .nav-bar {
     position: fixed;
     font-family: 'Roboto Condensed', sans-serif;
@@ -67,37 +66,25 @@ div {
     height:80px;
     width: 100%;;
     margin:0;
-
     h2 { 
         font-size:2.8em;
-        padding-left:1.8em;
+        padding-left:1em;
         display:inline-block;
     }
     a {
-        margin-top: 20px;
         font-size:1.5em;
         color:$color1;
         margin-left:15px;
-    
-        
     }
     .logo-nav {
-        margin-top:5px;
         margin-left:20px;
         height:40px; 
     }
     .nav-links {
-    padding-top:20px;
     padding-left:15px;
-    padding-right:10px; 
+    padding-right:5px; 
     }
 }
-
-
-
-
-
-
 
 /* === Main Section === */
 
@@ -117,7 +104,6 @@ div {
  }
 }
 
-
 /* === About === */
 
 .about {
@@ -125,43 +111,41 @@ div {
     padding:2%;
 }
 .about h2  {
-    display: inline-block;
+    padding-bottom:1%;
 }
-.about img {
-    max-height:400px;
-     margin:0 auto;
-
+.about-sub-container {
+    margin-left:2%;
+    margin-right:2%;
+    background-color:$color2;
 }
 .about-img-container {
    padding:0;
 } 
+.about img {
+    max-height:400px;
+    margin:0;
+
+}
 .about-txt-container {
     height:100%;
-    background-color:$color2;
+    padding:1%;
     text-align:center;
-    margin:0 auto;
+   
 }
-
 
 /* === Skills === */
 .skills {
-
 }
-
 
 /* === Work === */
 .work {
 
 }
 
-
-
 /* === Contact === */
 .contact {
 
 }
-
-
 
 /* ==== Foooter === */
 
@@ -169,11 +153,14 @@ div {
     background-color: black;
     height:150px;
     text-align:center;
-}
-.footer i {
-    color:white; 
-    font-size:4em;
-}
 
+    i {
+        color:white; 
+        font-size:4em;
+        padding:15px;
+    }
+
+}
+ 
 /* === Responsive CSS === */
 

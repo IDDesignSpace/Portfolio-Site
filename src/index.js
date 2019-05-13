@@ -5,7 +5,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/styles.scss';
 import logo from './img/id.png';
-import headShot from './img/head.jpg'
+import headShot from './img/head.jpg';
+import BarChart from './chart.js';
+
 
 {/* Navbar Component */ }
 
@@ -17,11 +19,11 @@ const NavBar = function() {
                     <h2>idDesignSpace</h2>
                 </div>
                 <div className="col-lg-3 col-md-6 nav-links align-self-center">
-                    <a>Home</a>
-                    <a>About</a>
-                    <a>Skills</a>
-                    <a>Work</a>
-                    <a>Contact</a>
+                    <a href="#main">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
                 </div>
         </div>
        
@@ -36,7 +38,7 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="main">
+            <div className="main container-fluid" id="main">
                 <div className="row justify-content-center">
                     <img src={logo} className="logo" />
                 </div>
@@ -61,11 +63,11 @@ class About extends React.Component {
     }
     render() {
         return (
-            <div class="container-fluid about">
+            <div class="container-fluid about" id="about">
                 <div className=" row justify-content-center">
                     <h2>About</h2>
                 </div>
-                <div className="row justify-content-sm-center">
+                <div className="row justify-content-sm-center about-sub-container">
                         <div className="col-lg-3 col-md-6 about-img-container">
                             <img src={headShot} alt="" className="img-responsive"/>
                         </div>
@@ -87,12 +89,15 @@ class Skills extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h2>Skills</h2>
-                <div className="graph">
-                
+            <div class="container-fluid skills" id="skills">
+                <div className=" row justify-content-center">
+                    <h2>Skills</h2>
+                </div>
+                <div className="row justify-content-center">
+                    <BarChart />
                 </div>
             </div>
+
         );
     }
 }
@@ -105,9 +110,11 @@ class Work extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="work">
                 <h2>Work</h2>
-                <div className="work"></div>
+                <div className="work">
+                
+                </div>
             </div>
         );
     }
@@ -121,7 +128,7 @@ class Contact extends React.Component {
     }
     render() {
         return (
-            <div className="contact">
+            <div className="contact" id="contact">
                 <h2>Contact</h2>
             </div>
         );
@@ -135,11 +142,14 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <div className="footer">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-codepen"></i>
+            <div className="container-fluid" id="footer">
+                <div className="row footer justify-content-center">
+                    <i className="fab fa-github align-self-center"></i>
+                    <i className="fab fa-linkedin align-self-center"></i>
+                    <i className="fab fa-codepen align-self-center"></i>
+                </div>
             </div>
+            
         );
     }
 }
@@ -152,7 +162,7 @@ class MyPage extends React.Component {
     }
     render() {
         return (
-            <div className="my-page">
+            <div className="container-fluid my-page">
                 <NavBar /> 
                 <Main />
                 <About />
