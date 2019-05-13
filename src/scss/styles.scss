@@ -23,18 +23,28 @@ $whitebg: rgba(255,255,255,1);
 body {
     height: 100%;
     margin: 0;
-    background-color:$whitebg;
+    background-color: $whitebg;
     font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-    padding:.8em;
+    padding: .8em;
     background-color: $color3;
     margin:3% 10% 4% 10%;
     font-size:5vh;
     // font-family: 'Roboto Condensed', sans-serif;
 }
+h2,h3,h4 {
+    font-size:3em;
+}
 
+p {
+    font-size:2em;
+}
+
+div {
+    padding:0;
+}
 /* === Page Setting === */
 
 #root {
@@ -57,32 +67,37 @@ h1 {
     height:80px;
     width: 100%;;
     margin:0;
-}
 
-.nav h2 { 
-     font-size:2.8em;
-     padding-left:1.8em;
-     display:inline-block;
-}
-
-.logo-nav {
-    margin-top:5px;
-    margin-left:20px;
-    height:40px; 
-}
-.nav-links {
+    h2 { 
+        font-size:2.8em;
+        padding-left:1.8em;
+        display:inline-block;
+    }
+    a {
+        margin-top: 20px;
+        font-size:1.5em;
+        color:$color1;
+        margin-left:15px;
+    
+        
+    }
+    .logo-nav {
+        margin-top:5px;
+        margin-left:20px;
+        height:40px; 
+    }
+    .nav-links {
     padding-top:20px;
     padding-left:15px;
     padding-right:10px; 
+    }
 }
-.nav-bar a {
-    margin-top: 20px;
-    font-size:1.5em;
-    color:$color1;
-    margin-left:15px;
-   
-    
-}
+
+
+
+
+
+
 
 /* === Main Section === */
 
@@ -90,27 +105,43 @@ h1 {
     margin:0 auto;
     height:100vh;
     background-image:url('../img/main.jpg');
-    text-align:center;
     margin:0;
     width:100vw;
-}
- .main .logo {
+
+    .logo {
      margin:0 auto;
      height:45vh;
      margin-top:15vh;
      background-color:rgba(255,255,255,.75);
      opacity:1;
  }
+}
+
 
 /* === About === */
+
 .about {
     background-color:$whitebg;
-    padding:10%;
+    padding:2%;
+}
+.about h2  {
+    display: inline-block;
 }
 .about img {
     max-height:400px;
+     margin:0 auto;
 
 }
+.about-img-container {
+   padding:0;
+} 
+.about-txt-container {
+    height:100%;
+    background-color:$color2;
+    text-align:center;
+    margin:0 auto;
+}
+
 
 /* === Skills === */
 .skills {
@@ -143,3 +174,6 @@ h1 {
     color:white; 
     font-size:4em;
 }
+
+/* === Responsive CSS === */
+

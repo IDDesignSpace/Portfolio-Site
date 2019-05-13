@@ -1,14 +1,11 @@
-/* This is the SASS file for idDesignSpace */
-/*
- * Colors for the project
- * Coolors Exported Palette - coolors.co/01020c-f2dd6e-e4d6a7-9b2915-b9baa3 
-*/
+/* === This is the SASS file for idDesignSpace === */
+/* === Global Settings === */
 /* HSL */
 /* RGB */
 body {
   height: 100%;
-  margin: 0px;
-  background-color: #9b2915;
+  margin: 0;
+  background-color: white;
   font-family: 'Raleway', sans-serif; }
 
 h1 {
@@ -17,40 +14,96 @@ h1 {
   margin: 3% 10% 4% 10%;
   font-size: 5vh; }
 
-.my-page {
+h2, h3, h4 {
+  font-size: 3em; }
+
+p {
+  font-size: 2em; }
+
+div {
   padding: 0; }
 
+/* === Page Setting === */
+#root {
+  width: 100%; }
+
+.my-page {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%; }
+
+/* === Navbar Settings === */
 .nav-bar {
+  position: fixed;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #f2dd6e;
-  height: 80px; }
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  margin: 0; }
+  .nav-bar h2 {
+    font-size: 2.8em;
+    padding-left: 1.8em;
+    display: inline-block; }
+  .nav-bar a {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #01020c;
+    margin-left: 15px; }
+  .nav-bar .logo-nav {
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 40px; }
+  .nav-bar .nav-links {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px; }
 
-.nav h2 {
-  font-size: 40px;
-  padding-left: 20px;
-  display: inline-block; }
-
-.logo-nav {
-  margin-top: 5px;
-  margin-left: 20px;
-  height: 40px; }
-
-.nav-bar a {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #01020c;
-  margin-left: 15px;
-  text-align: right; }
-
+/* === Main Section === */
 .main {
   margin: 0 auto;
   height: 100vh;
   background-image: url("../img/main.jpg");
+  margin: 0;
+  width: 100vw; }
+  .main .logo {
+    margin: 0 auto;
+    height: 45vh;
+    margin-top: 15vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    opacity: 1; }
+
+/* === About === */
+.about {
+  background-color: white;
+  padding: 2%; }
+
+.about h2 {
+  display: inline-block; }
+
+.about img {
+  max-height: 400px;
+  margin: 0 auto; }
+
+.about-img-container {
+  padding: 0; }
+
+.about-txt-container {
+  height: 100%;
+  background-color: #f2dd6e;
+  text-align: center;
+  margin: 0 auto; }
+
+/* === Skills === */
+/* === Work === */
+/* === Contact === */
+/* ==== Foooter === */
+.footer {
+  background-color: black;
+  height: 150px;
   text-align: center; }
 
-.main .logo {
-  margin: 0 auto;
-  height: 45vh;
-  margin-top: 10vh;
-  background-color: rgba(255, 255, 255, 0.75);
-  opacity: 1; }
+.footer i {
+  color: white;
+  font-size: 4em; }
+
+/* === Responsive CSS === */

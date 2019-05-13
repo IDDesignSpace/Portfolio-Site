@@ -12,11 +12,11 @@ import headShot from './img/head.jpg'
 const NavBar = function() {
     return (
         <div className="row nav-bar">
-                <div className="col-lg-9  col-md-6 nav">
+            <div className="col-lg-9  col-md-6 nav align-self-center">
                     <img src={logo} alt="iddespignspace-logo" className="logo-nav img-responsive" />
                     <h2>idDesignSpace</h2>
                 </div>
-                <div className="col-lg-3 col-md-6 nav-links">
+                <div className="col-lg-3 col-md-6 nav-links align-self-center">
                     <a>Home</a>
                     <a>About</a>
                     <a>Skills</a>
@@ -36,10 +36,16 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div className="main container-fluid">
-                <img src={logo} className="logo"/>
-                <h1>Welcome to idDesignSpace</h1>
-                <h2>Front End Developer and Designer</h2>
+            <div className="main">
+                <div className="row justify-content-center">
+                    <img src={logo} className="logo" />
+                </div>
+                <div className="row justify-content-center">
+                    <h1>Welcome to idDesignSpace</h1>
+                </div>
+                <div className="row justify-content-center">
+                    <h2>Front End Developer and Designer</h2>
+                </div>
              </div>
            
         );
@@ -55,14 +61,20 @@ class About extends React.Component {
     }
     render() {
         return (
-            <div className = "about">
-                <div className = "row">
+            <div class="container-fluid about">
+                <div className=" row justify-content-center">
                     <h2>About</h2>
                 </div>
-                
-                <img src={headShot} alt="" className="img-responsive"/>
-                <p> My name is Ian Barkan, I am a 28 year software developer and designer. I have a knack for creative problem solving, making visually interesting User Interfaces and carefully crafting User Experiences. </p>
-            </div>
+                <div className="row justify-content-sm-center">
+                        <div className="col-lg-3 col-md-6 about-img-container">
+                            <img src={headShot} alt="" className="img-responsive"/>
+                        </div>
+                        <div className="col-lg-9 col-md-6 about-txt-container align-self-center">
+                            <p> My name is Ian Barkan, I am a 28 year software developer and designer. I have a knack for creative problem solving, making visually interesting User Interfaces and carefully crafting User Experiences. </p>
+                        </div>
+                    </div>
+                </div>
+        
         );
     }
 }
