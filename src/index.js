@@ -131,16 +131,30 @@ class Contact extends React.Component {
             <div className="contact" id="contact">
                 <h2>Contact</h2>
                 <form>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="name.."></input>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="last name.."></input>
-                    <label for="email">Email</label>
-                    <input type="email" id="" name="email" placeholder="email.."></input>
-                    <label for="pnumber">Phone Number</label>
-                    <input type="number" id="pnumber" name="phonenumber" placeholder="phone number.."></input>
-                    <label for="message">Message</label>
-                    <input type="submit" value="submit"></input>
+                    <div className="row">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="name.."></input>
+                    </div>
+                    <div className="row">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="last name.."></input>
+                    </div>
+                    <div className="row">
+                        <label for="email">Email</label>
+                        <input type="email" id="" name="email" placeholder="email.."></input>
+                    </div>
+                    <div className="row">
+                        <label for="pnumber">Phone Number</label>
+                        <input type="number" id="pnumber" name="phonenumber" placeholder="phone number.."></input>
+                    </div>
+                    <div className="row">
+                        <label for="message">Message</label>
+                    </div>
+                        
+                    <div className="row">
+                        <input type="submit" value="submit"></input>
+                    </div>
+                    
                 </form>
             </div>
         );
