@@ -3,7 +3,6 @@ import { Bar } from 'react-chartjs-2';
 
 
 
-
 const data = {
     labels: ['HTML', 'CSS', 'JavaScript', 'BootStrap 3', 'JQuery', 'SASS', 'ReactJS'],
     datasets: [{
@@ -40,9 +39,10 @@ const data = {
 
 export default class BarChart extends Component {
     render() {
+       
         return (
             <div>
-                <Bar ref="chart" data={data} height={500} width={800} className="bar-chart"/>
+                <Bar ref="chart"  data={data} height={500} width={800} id="chart" className="bar-chart"/>
             </div>
         );
     }
