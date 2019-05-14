@@ -1,0 +1,991 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/scss/styles.scss":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/sass-loader/lib/loader.js??ref--6-oneOf-5-3!./src/scss/styles.scss ***!
+  \********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var urlEscape = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../img/main.jpg */ "./src/img/main.jpg"));
+
+// Module
+exports.push([module.i, "/* === This is the SASS file for idDesignSpace === */\n/* === Global Settings === */\n/* HSL */\n/* RGB */\nbody {\n  height: 100%;\n  margin: 0;\n  background-color: white;\n  font-family: 'Raleway', sans-serif; }\n\nh1 {\n  padding: .8em;\n  background-color: rgba(228, 214, 167, 0.8);\n  margin: 3% 10% 4% 10%;\n  font-size: 5vh; }\n\nh2, h3, h4 {\n  font-size: 3em; }\n\np {\n  font-size: 2em; }\n\ndiv {\n  padding: 0; }\n\n/* === Page Setting === */\n#root {\n  width: 100%; }\n\n.my-page {\n  padding: 0;\n  margin: 0 auto;\n  width: 100%; }\n\n/* === Navbar Settings === */\n.nav-bar {\n  position: fixed;\n  font-family: 'Roboto Condensed', sans-serif;\n  background-color: white;\n  min-height: 80px;\n  width: 100%;\n  margin: 0;\n  z-index: 1040; }\n  .nav-bar h2 {\n    font-size: 2.8em;\n    padding-left: 1em;\n    display: inline-block; }\n  .nav-bar a {\n    font-size: 1.5em;\n    color: #01020c;\n    margin-left: 15px; }\n  .nav-bar .logo-nav {\n    margin-left: 20px;\n    height: 40px; }\n  .nav-bar .nav-links {\n    padding-left: 15px;\n    padding-right: 5px; }\n\n/* === Main Section === */\n.main {\n  margin: 0 auto;\n  height: 100vh;\n  background-image: url(" + ___CSS_LOADER_URL___0___ + ");\n  margin: 0;\n  width: 100vw; }\n  .main .logo {\n    margin: 0 auto;\n    height: 45vh;\n    margin-top: 15vh;\n    background-color: rgba(255, 255, 255, 0.75);\n    opacity: 1; }\n\n/* === About === */\n.about {\n  background-color: white;\n  padding: 3%;\n  min-height: 500px;\n  background-color: rgba(228, 214, 167, 0.8); }\n\n.about h2 {\n  padding-bottom: 1%; }\n\n.about-sub-container {\n  margin-left: 2%;\n  margin-right: 2%;\n  background-color: rgba(242, 221, 110, 0.5); }\n\n.about-img-container {\n  padding: 0; }\n\n.about img {\n  max-height: 400px;\n  margin: 0; }\n\n.about-txt-container {\n  height: 100%;\n  padding: 1%;\n  text-align: center; }\n\n/* === Skills === */\n.skills {\n  padding: 3%;\n  background-color: #9b2915;\n  min-height: 500px; }\n  .skills .bar-chart {\n    color: white; }\n\n/* === Work === */\n.work {\n  min-height: 500px;\n  padding: 3%;\n  background-color: rgba(228, 214, 167, 0.8); }\n\n/* === Contact === */\n.contact {\n  padding: 3%;\n  color: white;\n  background-color: #9b2915;\n  min-height: 500px; }\n  .contact .form-container {\n    padding: 20px 30px 50px 30px;\n    margin: 0 auto; }\n  .contact .contact-container {\n    text-align: center; }\n  .contact input {\n    width: 75%;\n    height: 40px; }\n  .contact #contact-submit {\n    height: 100%;\n    padding: 10px;\n    width: 20%;\n    font-size: 2.5em;\n    border-radius: 9%; }\n\n/* ==== Foooter === */\n.footer {\n  background-color: black;\n  height: 150px;\n  text-align: center; }\n  .footer i {\n    color: white;\n    font-size: 4em;\n    padding: 15px; }\n\n/* === Responsive CSS === */\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./src/chart.js":
+/*!**********************!*\
+  !*** ./src/chart.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BarChart; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+var _jsxFileName = "D:\\Users\\Ian\\Desktop\\Portfolio-Site\\src\\chart.js";
+
+
+const ctx = document.querySelector("canvas");
+const data = {
+  labels: ['HTML', 'CSS', 'JavaScript', 'BootStrap 3', 'JQuery', 'SASS', 'ReactJS'],
+  datasets: [{
+    label: 'Competency',
+    fill: false,
+    lineTension: 0.5,
+    backgroundColor: 'rgba(75,192,192,0.4)',
+    borderColor: 'rgba(75,192,192,1)',
+    borderCapStyle: 'butt',
+    borderDash: [],
+    borderDashOffset: 0.0,
+    borderJoinStyle: 'miter',
+    pointBorderColor: 'rgba(75,192,192,1)',
+    pointBackgroundColor: '#fff',
+    pointBorderWidth: 1,
+    pointHoverRadius: 5,
+    pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+    pointHoverBorderColor: 'rgba(220,220,220,1)',
+    pointHoverBorderWidth: 2,
+    pointRadius: 1,
+    pointHitRadius: 10,
+    data: [65, 59, 80, 81, 56, 55, 40]
+  }]
+};
+class BarChart extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Bar"], {
+      ref: "chart",
+      data: data,
+      className: "bar-chart",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }));
+  }
+
+  componentDidMount() {
+    const datasets = this.refs.chart.chartInstance.data.datasets;
+    console.log(datasets[0].data);
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/img/head.jpg":
+/*!**************************!*\
+  !*** ./src/img/head.jpg ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/head.71a1a7e3.jpg";
+
+/***/ }),
+
+/***/ "./src/img/id.png":
+/*!************************!*\
+  !*** ./src/img/id.png ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/id.d5d3c00c.png";
+
+/***/ }),
+
+/***/ "./src/img/main.jpg":
+/*!**************************!*\
+  !*** ./src/img/main.jpg ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/main.c8c556d6.jpg";
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/styles.scss */ "./src/scss/styles.scss");
+/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_id_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/id.png */ "./src/img/id.png");
+/* harmony import */ var _img_id_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_id_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _img_head_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/head.jpg */ "./src/img/head.jpg");
+/* harmony import */ var _img_head_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_head_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _chart_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./chart.js */ "./src/chart.js");
+var _jsxFileName = "D:\\Users\\Ian\\Desktop\\Portfolio-Site\\src\\index.js";
+
+
+
+
+
+
+
+
+
+{
+  /* Navbar Component */
+}
+
+const NavBar = function () {
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "row nav-bar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "col-lg-9  col-md-6 nav align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    src: _img_id_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "iddespignspace-logo",
+    className: "logo-nav img-responsive",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "idDesignSpace")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "col-lg-3 col-md-6 nav-links align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: "#main",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Home"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: "#about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "About"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: "#skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Skills"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: "#work",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Work"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: "#contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "Contact")));
+};
+
+{
+  /* Main Component */
+}
+
+class Main extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "main container-fluid",
+      id: "main",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+      src: _img_id_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+      className: "logo",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, "Welcome to idDesignSpace")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, "Front End Developer and Designer")));
+  }
+
+}
+
+{
+  /* About Component */
+}
+
+class About extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      class: "container-fluid about",
+      id: "about",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: " row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: this
+    }, "About")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-sm-center about-sub-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-3 col-md-6 about-img-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+      src: _img_head_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+      alt: "",
+      className: "img-responsive",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-9 col-md-6 about-txt-container align-self-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, " My name is Ian Barkan, I am a 28 year software developer and designer. I have a knack for creative problem solving, making visually interesting User Interfaces and carefully crafting User Experiences. "))));
+  }
+
+}
+
+{
+  /* Skills Component */
+}
+
+class Skills extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      class: "container-fluid skills",
+      id: "skills",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: " row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, "Skills")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_chart_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      width: 100,
+      height: 50,
+      options: {
+        maintainAspectRatio: false
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
+    })));
+  }
+
+}
+
+{
+  /* Work Component */
+}
+
+class Work extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: " work container-fluid",
+      id: "work",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116
+      },
+      __self: this
+    }, "Work"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 118
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119
+      },
+      __self: this
+    }, "Delaware Valley Veterans Consortium"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124
+      },
+      __self: this
+    }, "Arcade Game Clone"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 126
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 128
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129
+      },
+      __self: this
+    }, "Restaurant Website"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 131
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 133
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 134
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+{
+  /* Contact Component */
+}
+
+class Contact extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact container-fluid",
+      id: "contact",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 152
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row contact-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 154
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+      className: "text-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 155
+      },
+      __self: this
+    }, "Contact")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row form-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "col-lg-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 158
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("form", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 159
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container justify-content-center col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 160
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("label", {
+      className: "text-center",
+      for: "fname",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 161
+      },
+      __self: this
+    }, "First Name")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 163
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+      type: "text",
+      id: "fname",
+      name: "firstname",
+      placeholder: "name..",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 164
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 167
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("label", {
+      for: "lname",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 168
+      },
+      __self: this
+    }, "Last Name")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 171
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+      type: "text",
+      id: "lname",
+      name: "lastname",
+      placeholder: "name..",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 172
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("label", {
+      for: "email",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 176
+      },
+      __self: this
+    }, "Email")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 179
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+      type: "email",
+      id: "",
+      name: "email",
+      placeholder: "email..",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 180
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 184
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("label", {
+      for: "pnumber",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 185
+      },
+      __self: this
+    }, "Phone Number")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 187
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+      type: "number",
+      id: "pnumber",
+      name: "phonenumber",
+      placeholder: "phone number..",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 188
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 193
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("label", {
+      className: "text-center",
+      for: "message",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 194
+      },
+      __self: this
+    }, "Message")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 196
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "contact-container col-lg-12 col-md-12 col-sm-12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 202
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+      type: "submit",
+      value: "submit",
+      id: "contact-submit",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 203
+      },
+      __self: this
+    })))))));
+  }
+
+}
+
+{
+  /* Footer Component */
+}
+
+class Footer extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "container-fluid",
+      id: "footer",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 223
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "row footer justify-content-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 224
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+      href: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 225
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+      className: "fab fa-github align-self-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 225
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+      href: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 226
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+      className: "fab fa-linkedin align-self-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 226
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+      href: "",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 227
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+      className: "fab fa-codepen align-self-center",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 227
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+{
+  /* MyPage Component */
+}
+
+class MyPage extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: "container-fluid my-page",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 243
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(NavBar, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 244
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Main, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 245
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(About, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 246
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Skills, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 247
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Work, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 248
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Contact, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 249
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Footer, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 250
+      },
+      __self: this
+    }));
+  }
+
+}
+
+;
+react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.render(react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(MyPage, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 259
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
+/***/ }),
+
+/***/ "./src/scss/styles.scss":
+/*!******************************!*\
+  !*** ./src/scss/styles.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../node_modules/postcss-loader/src??postcss!../../node_modules/sass-loader/lib/loader.js??ref--6-oneOf-5-3!./styles.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/scss/styles.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../node_modules/postcss-loader/src??postcss!../../node_modules/sass-loader/lib/loader.js??ref--6-oneOf-5-3!./styles.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/scss/styles.scss", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../node_modules/postcss-loader/src??postcss!../../node_modules/sass-loader/lib/loader.js??ref--6-oneOf-5-3!./styles.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/scss/styles.scss");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! D:\Users\Ian\Desktop\Portfolio-Site\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! D:\Users\Ian\Desktop\Portfolio-Site\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map

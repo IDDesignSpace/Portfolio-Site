@@ -1,0 +1,74 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/chart.js":
+/*!**********************!*\
+  !*** ./src/chart.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BarChart; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+var _jsxFileName = "D:\\Users\\Ian\\Desktop\\Portfolio-Site\\src\\chart.js";
+
+
+const ctx = document.querySelector("canvas");
+const data = {
+  labels: ['HTML', 'CSS', 'JavaScript', 'BootStrap 3', 'JQuery', 'SASS', 'ReactJS'],
+  datasets: [{
+    label: 'Competency',
+    fill: false,
+    lineTension: 0.5,
+    backgroundColor: 'rgba(75,192,192,0.4)',
+    borderColor: 'rgba(75,192,192,1)',
+    borderCapStyle: 'butt',
+    borderDash: [],
+    borderDashOffset: 0.0,
+    borderJoinStyle: 'miter',
+    pointBorderColor: 'rgba(75,192,192,1)',
+    pointBackgroundColor: '#fff',
+    pointBorderWidth: 1,
+    pointHoverRadius: 5,
+    pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+    pointHoverBorderColor: 'rgba(220,220,220,1)',
+    pointHoverBorderWidth: 2,
+    pointRadius: 1,
+    pointHitRadius: 10,
+    data: [65, 59, 80, 81, 56, 55, 40]
+  }]
+};
+class BarChart extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Bar"], {
+      ref: "chart",
+      data: data,
+      className: "bar-chart",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }));
+  }
+
+  componentDidMount() {
+    const datasets = this.refs.chart.chartInstance.data.datasets;
+    console.log(datasets[0].data);
+  }
+
+}
+
+/***/ })
+
+})
+//# sourceMappingURL=main.891d1434a8822daacc28.hot-update.js.map

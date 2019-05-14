@@ -14,10 +14,10 @@ $color5: hsla(63%, 14%, 68%, 1);
 
 /* RGB */
 $color1: rgba(1, 2, 12, 1);
-$color2: rgba(242, 221, 110, 1);
+$color2: rgba(242, 221, 110, .5);
 $color3: rgba(228, 214, 167, .8);
 $color4: rgba(155, 41, 21, 1);
-$color5: rgba(185, 186, 163, 1);
+$color5: rgba(185, 186, 163, .5);
 $whitebg: rgba(255,255,255,1);
 
 body {
@@ -64,9 +64,10 @@ div {
     position: fixed;
     font-family: 'Roboto Condensed', sans-serif;
     background-color:$whitebg;
-    height:80px;
+    min-height:80px;
     width: 100%;;
     margin:0;
+    z-index: 1040;
     h2 { 
         font-size:2.8em;
         padding-left:1em;
@@ -109,7 +110,9 @@ div {
 
 .about {
     background-color:$whitebg;
-    padding:2%;
+    padding:3%;
+    min-height:500px;
+     background-color:$color3;
 }
 .about h2  {
     padding-bottom:1%;
@@ -136,15 +139,47 @@ div {
 
 /* === Skills === */
 .skills {
+    padding:3%;
+    background-color:$color4;
+    min-height:500px;
+    .bar-chart {
+        color:white;
+    }
 }
 
 /* === Work === */
 .work {
-
+    min-height:500px;
+    padding:3%;
+    background-color:$color3;
+        
 }
 
 /* === Contact === */
 .contact {
+    padding:3%;
+    color:$whitebg;
+     background-color:$color4;
+        min-height:500px;
+    .form-container {
+        padding:20px 30px 50px 30px;
+        margin:0 auto;
+     
+    }
+    .contact-container {
+        text-align: center;
+    }
+    input {
+        width:75%;
+        height:40px;
+    }
+    #contact-submit {
+        height:100%;
+        padding:10px;
+        width: 20%;
+        font-size:2.5em;
+        border-radius: 9%;
+    }
 
 }
 

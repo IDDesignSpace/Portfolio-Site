@@ -94,7 +94,7 @@ class Skills extends React.Component {
                     <h2>Skills</h2>
                 </div>
                 <div className="row justify-content-center">
-                    <BarChart />
+                    <BarChart/>
                 </div>
             </div>
 
@@ -110,10 +110,29 @@ class Work extends React.Component {
     }
     render() {
         return (
-            <div id="work">
-                <h2>Work</h2>
-                <div className="work">
-                
+            <div className=" work container-fluid" id="work">
+                <h2 className="text-center">Work</h2>
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <h3 className="text-center">Delaware Valley Veterans Consortium</h3>
+                        {/* <img src={} alt=""> */}
+                        <p></p>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <h3 className="text-center">Arcade Game Clone</h3>
+                        {/* <img src={} alt=""> */}
+                        <p></p>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <h3 className="text-center">Restaurant Website</h3>
+                        {/* <img src={} alt=""> */}
+                        <p></p>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <h3 className="text-center"></h3>
+                        {/* <img src={} alt=""> */}
+                        <p></p>
+                    </div>
                 </div>
             </div>
         );
@@ -128,40 +147,71 @@ class Contact extends React.Component {
     }
     render() {
         return (
-            <div className="contact" id="contact">
-                <h2>Contact</h2>
-                <form>
-                    <div className="row">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="name.."></input>
+            <div className="contact container-fluid" id="contact">
+                <div className="row contact-container">
+                    <div className="col-lg-12">
+                        <h2 className="text-center">Contact</h2>
                     </div>
-                    <div className="row">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="last name.."></input>
-                    </div>
-                    <div className="row">
-                        <label for="email">Email</label>
-                        <input type="email" id="" name="email" placeholder="email.."></input>
-                    </div>
-                    <div className="row">
-                        <label for="pnumber">Phone Number</label>
-                        <input type="number" id="pnumber" name="phonenumber" placeholder="phone number.."></input>
-                    </div>
-                    <div className="row">
-                        <label for="message">Message</label>
-                    </div>
-                        
-                    <div className="row">
-                        <input type="submit" value="submit"></input>
-                    </div>
+                    <div className="row form-container">
+                        <div className="col-lg-12">
+                        <form>
+                            <div className="contact-container justify-content-center col-lg-12 col-md-12 col-sm-12">
+                                <label className="text-center" for="fname">First Name</label>
+                            </div>
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                    <input type="text" id="fname" name="firstname" placeholder="name.."/>
+                            </div>
+            
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <label for="lname">Last Name</label>
+                            </div>
+
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <input type="text" id="lname" name="lastname" placeholder="name.."/>
+                            </div>
+
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <input type="email" id="" name="email" placeholder="email.."/>
+                            </div>
+                            
                     
-                </form>
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <label for="pnumber">Phone Number</label>
+                            </div>
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <input type="number" id="pnumber" name="phonenumber" placeholder="phone number.."/>
+                            </div>
+                            
+                            
+
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <label className="text-center" for="message">Message</label>
+                            </div>
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                            
+                            </div>
+
+                    
+                        
+                            <div className="contact-container col-lg-12 col-md-12 col-sm-12">
+                                <input type="submit" value="submit" id="contact-submit"/>
+                            </div>
+
+                        </form>
+                        </div>
+                    </div>                 
+                </div>               
             </div>
         );
     }
 }
 
 {/* Footer Component */ }
+
 class Footer extends React.Component {
     constructor(props) {
         super(props);
