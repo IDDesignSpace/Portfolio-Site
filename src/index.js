@@ -130,6 +130,18 @@ class Contact extends React.Component {
         return (
             <div className="contact" id="contact">
                 <h2>Contact</h2>
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="name.."></input>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="last name.."></input>
+                    <label for="email">Email</label>
+                    <input type="email" id="" name="email" placeholder="email.."></input>
+                    <label for="pnumber">Phone Number</label>
+                    <input type="number" id="pnumber" name="phonenumber" placeholder="phone number.."></input>
+                    <label for="message">Message</label>
+                    <input type="submit" value="submit"></input>
+                </form>
             </div>
         );
     }
@@ -144,9 +156,9 @@ class Footer extends React.Component {
         return (
             <div className="container-fluid" id="footer">
                 <div className="row footer justify-content-center">
-                    <i className="fab fa-github align-self-center"></i>
-                    <i className="fab fa-linkedin align-self-center"></i>
-                    <i className="fab fa-codepen align-self-center"></i>
+                    <a href=""><i className="fab fa-github align-self-center"></i></a>
+                    <a href=""><i className="fab fa-linkedin align-self-center"></i></a>
+                    <a href=""><i className="fab fa-codepen align-self-center"></i></a>
                 </div>
             </div>
             
