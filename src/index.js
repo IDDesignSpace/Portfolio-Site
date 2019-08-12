@@ -16,7 +16,7 @@ const NavBar = function() {
         <div className="row nav-bar">
             <div className="col-lg-9  col-md-6 nav align-self-center">
                     <img src={logo} alt="iddespignspace-logo" className="logo-nav img-responsive" />
-                    <h2>idDesignSpace test</h2>
+                    <h2>idDesignSpace</h2>
                 </div>
                 <div className="col-lg-3 col-md-6 nav-links align-self-center">
                     <a href="#main">Home</a>
